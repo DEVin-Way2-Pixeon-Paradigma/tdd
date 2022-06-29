@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Radio from './components/Radio';
 
 function App() {
   return (
@@ -18,6 +19,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <Radio label="Laranja" />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
