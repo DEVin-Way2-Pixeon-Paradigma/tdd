@@ -1,7 +1,7 @@
 /**
  * Formas de testar
  * adicinar arquivos na __tests__
- * criar um arquivo com extensão .spec.js ou test.js
+ * criar um arquivo com extensão .spec.js ou .test.js
  */
 import { filterByTerm } from '../util/filterByTerm';
 
@@ -40,6 +40,10 @@ describe('Filter function', () => {
 
   it('should throw an error with empty array', () => {
     expect(() => filterByTerm([], 'teste', 'url')).toThrowError('inputArray cannot be empty');
+  }) 
+
+  it('should throw an error with empty searchTerm', () => {
+    expect(() => filterByTerm([1,2,3], '')).toThrowError('searchTerm cannot be empty');
   })
   
 })
