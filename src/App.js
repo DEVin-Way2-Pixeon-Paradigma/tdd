@@ -17,9 +17,13 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <Radio label="teste" value="teste" name="teste" labelFor="teste" labelColor="yellow"/>
         </a>
+        
       </header>
-      <Radio label="Laranja" />
+      <Radio label="Laranja" value="laranja" name="frutas" labelFor="laranja" />
+      <Radio label="Maça" value="maça" name="frutas" labelFor="maça"/>
+      <Radio label="Melancia" value="melancia" name="frutas" labelFor="melancia"/>
       <br />
       <br />
       <br />

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -42,6 +42,9 @@ export const Input = styled.input`
 `
 
 export const Label = styled.label`
-  padding-left: 0.8rem;
-  line-height: 1;
+  ${({ labelColor }) => css`
+    color: ${labelColor};
+    padding-left: 0.6rem;
+    line-height: 1;
+  `}
 `
