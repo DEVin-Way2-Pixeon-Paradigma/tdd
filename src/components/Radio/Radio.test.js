@@ -48,6 +48,19 @@ describe('<Radio />', () => {
     expect(onCheck).toHaveBeenCalledTimes(1);
 
   })
+
+  it('should be accessible with tab', () => {
+    render(<Radio label='Radio' labelFor='Radio'/>)
+
+    const radio = screen.getByLabelText(/radio/i);
+
+    expect(document.body).toHaveFocus()
+
+    userEvent.tab();
+
+    expect(radio).toHaveFocus();
+
+  })
 })
 
 
